@@ -13,5 +13,5 @@ puts "Total revenue from all stores is #{sum}"
 average = sum/Store.count
 puts "Average revenue from all stores is #{average}"
 
-@num_stores = Store.where("annual_revenue >= ?", 1000000).count
+@num_stores = Store.where("annual_revenue >= ?", 1000000).size
 puts "There are #{@num_stores} stores have revenue of 1 million or more."
